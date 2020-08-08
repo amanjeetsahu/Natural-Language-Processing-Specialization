@@ -1,0 +1,15 @@
+{
+    "train_size": 10,
+    "dev_size": 10,
+    "test_size": 10,
+    "vocab_size": 368,
+    "number_of_tags": 9,
+    "pad_word": "<pad>",
+    "pad_tag": "O",
+    "unk_word": "UNK",
+    "learning_rate": 1e-3,
+    "batch_size": 5,
+    "num_epochs": 10,
+    "lstm_hidden_dim": 50,
+    "embedding_dim": 50
+}
