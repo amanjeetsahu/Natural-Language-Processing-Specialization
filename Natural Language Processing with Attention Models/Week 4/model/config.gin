@@ -1,0 +1,83 @@
+# Parameters for Adam:
+# ==============================================================================
+Adam.b1 = 0.9
+Adam.b2 = 0.999
+Adam.clip_grad_norm = None
+Adam.eps = 1e-05
+Adam.weight_decay_rate = 1e-05
+
+# Parameters for AddLossWeights:
+# ==============================================================================
+# None.
+
+# Parameters for backend:
+# ==============================================================================
+backend.name = 'jax'
+
+# Parameters for BucketByLength:
+# ==============================================================================
+BucketByLength.length_axis = 0
+BucketByLength.length_keys = None
+BucketByLength.strict_pad_on_len = False
+
+# Parameters for FastGelu:
+# ==============================================================================
+# None.
+
+# Parameters for FilterByLength:
+# ==============================================================================
+FilterByLength.length_axis = 0
+FilterByLength.length_keys = None
+
+# Parameters for LogSoftmax:
+# ==============================================================================
+LogSoftmax.axis = -1
+
+# Parameters for random_spans_helper:
+# ==============================================================================
+# None.
+
+# Parameters for layers.SelfAttention:
+# ==============================================================================
+layers.SelfAttention.attention_dropout = 0.0
+layers.SelfAttention.bias = False
+layers.SelfAttention.chunk_len = None
+layers.SelfAttention.masked = False
+layers.SelfAttention.n_chunks_after = 0
+layers.SelfAttention.n_chunks_before = 0
+layers.SelfAttention.n_parallel_heads = None
+layers.SelfAttention.predict_drop_len = None
+layers.SelfAttention.predict_mem_len = None
+layers.SelfAttention.share_qk = False
+layers.SelfAttention.use_python_loop = False
+layers.SelfAttention.use_reference_code = False
+
+# Parameters for SentencePieceVocabulary:
+# ==============================================================================
+# None.
+
+# Parameters for Serial:
+# ==============================================================================
+# None.
+
+# Parameters for Shuffle:
+# ==============================================================================
+Shuffle.queue_size = 1024
+
+# Parameters for data.Tokenize:
+# ==============================================================================
+# None.
+
+# Parameters for tf_inputs.Tokenize:
+# ==============================================================================
+tf_inputs.Tokenize.keys = None
+tf_inputs.Tokenize.n_reserved_ids = 0
+tf_inputs.Tokenize.vocab_type = 'subword'
+
+# Parameters for Vocabulary:
+# ==============================================================================
+# None.
+
+# Parameters for warmup_and_rsqrt_decay:
+# ==============================================================================
+# None.

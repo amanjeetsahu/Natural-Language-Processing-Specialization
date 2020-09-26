@@ -1,0 +1,31 @@
+#####################################################
+#####################################################
+#  Copyright Cambridge Dialogue Systems Group, 2018 #
+#####################################################
+#####################################################
+
+Dataset contains the following files:
+1. data.json: the woz dialogue dataset, which contains the conversation  users and wizards, as well as a set of coarse labels for each user turn. This file contains both system and user dialogue acts annotated at the turn level. Files with multi-domain dialogues have "MUL" in their names. Single domain dialogues have either "SNG" or "WOZ" in their names.
+2. restaurant_db.json: the Cambridge restaurant database file, containing restaurants in the Cambridge UK area and a set of attributes.
+3. attraction_db.json: the Cambridge attraction database file, contining attractions in the Cambridge UK area and a set of attributes.
+4. hotel_db.json: the Cambridge hotel database file, containing hotels in the Cambridge UK area and a set of attributes.
+5. train_db.json: the Cambridge train (with artificial connections) database file, containing trains in the Cambridge UK area and a set of attributes.
+6. hospital_db.json: the Cambridge hospital database file, contatining information about departments.
+7. police_db.json: the Cambridge police station information.
+8. taxi_db.json: slot-value list for taxi domain.
+9. valListFile.txt: list of dialogues for validation.
+10. testListFile.txt: list of dialogues for testing.
+11. system_acts.json:
+  There are 6 domains ('Booking', 'Restaurant', 'Hotel', 'Attraction', 'Taxi', 'Train') and 1 dummy domain ('general').
+  A domain-dependent dialogue act is defined as a domain token followed by a domain-independent dialogue act, e.g. 'Hotel-inform' means it is an 'inform' act in the Hotel domain.
+  Dialogue acts which cannot take slots, e.g., 'good bye', are defined under the 'general' domain.
+  A slot-value pair defined as a list with two elements. The first element is slot token and the second one is its value.
+  If a dialogue act takes no slots, e.g., dialogue act 'offer booking' for an utterance 'would you like to take a reservation?', its slot-value pair is ['none', 'none']
+  There are four types of values:
+  1) If a slot takes a binary value, e.g., 'has Internet' or 'has park', the value is either 'yes' or 'no'.
+  2) If a slot is under the act 'request', e.g., 'request' about 'area', the value is expressed as '?'.
+  3) The value that appears in the utterance e.g., the name of a restaurant.
+  4) If for some reason the turn does not have an annotation then it is labeled as "No Annotation."
+12. ontology.json: Data-based ontology containing all the values for the different slots in the domains.
+13. slot_descriptions.json: A collection of human-written slot descriptions for each slot in the dataset. Each slot has at least two descriptions.
+14. tokenization.md: A description of the tokenization preprocessing we had to perform to maintain consistency between the dialogue act annotations of DSTC 8 Track 1 and the existing MultiWOZ 2.0 data. 
