@@ -89,3 +89,7 @@ This is the fourth course in the Natural Language Processing Specialization.
 **Week 4: Chatbots with a Reformer Model**
 
 - Build a chatbot using a reformer model
+
+# Specialization Completion Certificate
+
+![Certificate](https://i.ibb.co/ZVRj8DS/Certificate.png)
